@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class app{
+    - Gson gson;
+    - Reader reader;
+    - Products res;
+    - Scanner sc;
+    + {static} Product findProduct(Products productList, String name)
+}
+
+class Product {
+    - String name;
+    - double price;
+    - int quantity;
+    get/set()
+}
+
+class Products {
+    - List<Product> products;
+    get/set()
+}
+Products*--Product
+app--Product
+app--Products
+@enduml

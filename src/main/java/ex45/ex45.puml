@@ -1,0 +1,13 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class app{
+    - File fileInput;
+    - File fileOutput;
+    - ArrayList<String> lines;
+    - Scanner sc;
+    - Scanner consoleIn;
+    - String fileOutputName;
+    + {static} String replaceWithUse(String str)
+}
+@enduml

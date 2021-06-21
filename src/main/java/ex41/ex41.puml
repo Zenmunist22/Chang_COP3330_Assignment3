@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+class App {
+    - File fileInput;
+    - File fileOutput;
+    - FileWriter fileWriter;
+    - Scanner sc;
+    - String names;
+    - String namesArr[];
+    + {static} String[] splitNames(String names)
+}
+
+
+
+@enduml

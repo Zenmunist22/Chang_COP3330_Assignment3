@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class App{
+    - Scanner sc;
+    - String name;
+    - String author;
+    - String folderJava;
+    - String folderCSS;
+    - File indexHTML;
+    - FileWriter myWriter;
+    + {static} boolean createDir(String dir)
+}
+
+@enduml
